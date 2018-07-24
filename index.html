@@ -89,62 +89,17 @@
 <h3 id="查查自己在什么分支"><a href="#查查自己在什么分支" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
 <h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b <span class="string">"分支名字"</span></span><br></pre></td></tr></table></figure>
 <h3 id="将更改内容添加入分支"><a href="#将更改内容添加入分支" class="headerlink" title="将更改内容添加入分支"></a>将更改内容添加入分支</h3><p>添加全部更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure></p>
-<p>添加部分更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add</span><br></pre></td></tr></table></figure></p>
+<p>添加部分更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add 具体文件名</span><br></pre></td></tr></table></figure></p>
 <h3 id="添加备注"><a href="#添加备注" class="headerlink" title="添加备注"></a>添加备注</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"备注"</span></span><br></pre></td></tr></table></figure>
 <h3 id="推送分支"><a href="#推送分支" class="headerlink" title="推送分支"></a>推送分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin <span class="string">"分支名字"</span></span><br></pre></td></tr></table></figure>
-<h3 id="到GitHub合并代码"><a href="#到GitHub合并代码" class="headerlink" title="到GitHub合并代码"></a>到GitHub合并代码</h3><h2 id="拉取新代码"><a href="#拉取新代码" class="headerlink" title="拉取新代码"></a>拉取新代码</h2><h3 id="查查自己在什么分支-1"><a href="#查查自己在什么分支-1" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+<h3 id="到GitHub合并代码"><a href="#到GitHub合并代码" class="headerlink" title="到GitHub合并代码"></a>到GitHub合并代码</h3><p>end</p>
+<h2 id="拉取新代码"><a href="#拉取新代码" class="headerlink" title="拉取新代码"></a>拉取新代码</h2><h3 id="查查自己在什么分支-1"><a href="#查查自己在什么分支-1" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
 <h3 id="切换到主分支上"><a href="#切换到主分支上" class="headerlink" title="切换到主分支上"></a>切换到主分支上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
 <h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2018/07/24/2018072412/" data-id="cjjz5rpzh0002kwvkfvkimlax" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2018072411-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/24/2018072411-1/" class="article-date">
-  <time datetime="2018-07-24T03:39:12.000Z" itemprop="datePublished">2018-07-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/24/2018072411-1/">2018072411</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Git用树来形容最贴切，大家都这么说。<br>首先要有个仓库（树干），私有的就是栽在自己的院子里的树，公有的就是栽在路边的树。<br>然后要有分支，master是主分支（树干），其他的分支（树枝）。<br>把有改变的代码（叶子）加到分支上，写上备注（这片叶子是我的，有什么特别之处）。<br>往上一推，合并到主干，就是一棵大了一点的树了，但树还是那棵树。<br>再加东西是把那棵长大一点的树再拖下来，继续插枝。</p>
-<h2 id="记录下操作步骤（以win为例）："><a href="#记录下操作步骤（以win为例）：" class="headerlink" title="记录下操作步骤（以win为例）："></a>记录下操作步骤（以win为例）：</h2><p>在需要推送的代码文件夹打开cmd。</p>
-<h3 id="查查自己在什么分支"><a href="#查查自己在什么分支" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b <span class="string">"分支名字"</span></span><br></pre></td></tr></table></figure>
-<h3 id="将更改内容添加入分支"><a href="#将更改内容添加入分支" class="headerlink" title="将更改内容添加入分支"></a>将更改内容添加入分支</h3><p>添加全部更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure></p>
-<p>添加部分更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add</span><br></pre></td></tr></table></figure></p>
-<h3 id="添加备注"><a href="#添加备注" class="headerlink" title="添加备注"></a>添加备注</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"备注"</span></span><br></pre></td></tr></table></figure>
-<h3 id="推送分支"><a href="#推送分支" class="headerlink" title="推送分支"></a>推送分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin <span class="string">"分支名字"</span></span><br></pre></td></tr></table></figure>
-<h3 id="到GitHub合并代码"><a href="#到GitHub合并代码" class="headerlink" title="到GitHub合并代码"></a>到GitHub合并代码</h3><h2 id="拉取新代码"><a href="#拉取新代码" class="headerlink" title="拉取新代码"></a>拉取新代码</h2><h3 id="查查自己在什么分支-1"><a href="#查查自己在什么分支-1" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-<h3 id="切换到主分支上"><a href="#切换到主分支上" class="headerlink" title="切换到主分支上"></a>切换到主分支上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
-<h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/24/2018072411-1/" data-id="cjjz5rpz80000kwvknldhgknr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -231,10 +186,6 @@
         
           <li>
             <a href="/2018/07/24/2018072412/">2018072412</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/24/2018072411-1/">2018072411</a>
           </li>
         
           <li>
