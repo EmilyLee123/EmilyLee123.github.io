@@ -49,7 +49,7 @@
 <link rel="shortcut icon" href="/images/touxiang.jpeg">
 
 
-<title>归档集 - Emily</title>
+<title>git用法 - Emily</title>
 
 <meta name="keywords" content="">
 
@@ -96,8 +96,18 @@
 </div>
             <div class="page-title">
     <ul>
-        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
-        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/test" data-name="测试">测试</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/resource" data-name="资料">资料</a>
+                </li>
+            
+        
         <li class="page-search">
     <form id="search" class="search-form">
         <label for="s" class="sr-only">请输入关键字</label>
@@ -139,84 +149,54 @@
 <div class="main-inner">
     <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <h3 class="post-title">坦率的讲 - 本站目前共计6篇文章</h3>
-        </div>
-        <p><img src="/images/category-bg.jpg" alt="category-bg"></p>
-        <div class="post-content markdown-body" itemprop="articleBody">
-            <div class="archives">
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2019年02月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>14日14:59:33
-                            <a href="/资源/20190214145933.html">创建博客与遇到的问题</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2018年08月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>07日17:50:56
-                            <a href="/resource/20180807175056.html">Markdown文件基本编写语法</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>07日16:11:54
-                            <a href="/resource/20180807161154.html">Git初次配置用户名和邮箱</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>07日16:08:18
-                            <a href="/resource/20180807160818.html">Git使用ssh密钥</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2018年07月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>24日13:49:35
-                            <a href="/resource/20180724134935.html">Git用法</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>23日12:25:03
-                            <a href="/资源/20180807175056.html">Hello World</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="" target="_blank">
+                    <img width="48" src="/images/touxiang.jpeg" alt="avatar">
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="" target="_blank">Emily</a>
+                    <span title="最后编辑于2018-07-24">2018-07-24</span>
+                </p>
+                <p>一个测试</p>
+            </div>
+            <h2 class="post-title">Git用法</h2>
+            <div class="post-meta">
+                本文总共497个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
             </div>
         </div>
+        <div class="post-content markdown-body">
+            <p>Git用树来形容最贴切，大家都这么说。<br>首先要有个仓库（树干），私有的就是栽在自己的院子里的树，公有的就是栽在路边的树。<br>然后要有分支，master是主分支（树干），其他的分支（树枝）。<br>把有改变的代码（叶子）加到分支上，写上备注（这片叶子是我的，有什么特别之处）。<br>往上一推，合并到主干，就是一棵大了一点的树了，但树还是那棵树。<br>再加东西是把那棵长大一点的树再拖下来，继续插枝。</p>
+<h2 id="记录下操作步骤（以win为例）："><a href="#记录下操作步骤（以win为例）：" class="headerlink" title="记录下操作步骤（以win为例）："></a>记录下操作步骤（以win为例）：</h2><p>在需要推送的代码文件夹打开cmd。</p>
+<h3 id="查查自己在什么分支"><a href="#查查自己在什么分支" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b &quot;分支名字&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="将更改内容添加入分支"><a href="#将更改内容添加入分支" class="headerlink" title="将更改内容添加入分支"></a>将更改内容添加入分支</h3><p>添加全部更改内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure></p>
+<p>添加部分更改内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add 具体文件名</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加备注"><a href="#添加备注" class="headerlink" title="添加备注"></a>添加备注</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"备注"</span></span><br></pre></td></tr></table></figure>
+<h3 id="推送分支"><a href="#推送分支" class="headerlink" title="推送分支"></a>推送分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin <span class="string">"分支名字"</span></span><br></pre></td></tr></table></figure>
+<h3 id="到GitHub合并代码"><a href="#到GitHub合并代码" class="headerlink" title="到GitHub合并代码"></a>到GitHub合并代码</h3><p>end</p>
+<h2 id="拉取新代码"><a href="#拉取新代码" class="headerlink" title="拉取新代码"></a>拉取新代码</h2><h3 id="查查自己在什么分支-1"><a href="#查查自己在什么分支-1" class="headerlink" title="查查自己在什么分支"></a>查查自己在什么分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+<h3 id="切换到主分支上"><a href="#切换到主分支上" class="headerlink" title="切换到主分支上"></a>切换到主分支上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+<h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+        </div>
+        <div class="post-tool">
+            <!--<a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>-->
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/GitHub/">GitHub</a>
+            
+        </div>
+        
     </article>
+    
+    <p>本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
 </div>
-
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">

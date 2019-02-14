@@ -49,7 +49,7 @@
 <link rel="shortcut icon" href="/images/touxiang.jpeg">
 
 
-<title>归档集 - Emily</title>
+<title>markdown文件基本编写语法 - Emily</title>
 
 <meta name="keywords" content="">
 
@@ -96,8 +96,18 @@
 </div>
             <div class="page-title">
     <ul>
-        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
-        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/test" data-name="测试">测试</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/resource" data-name="资料">资料</a>
+                </li>
+            
+        
         <li class="page-search">
     <form id="search" class="search-form">
         <label for="s" class="sr-only">请输入关键字</label>
@@ -139,84 +149,151 @@
 <div class="main-inner">
     <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <h3 class="post-title">坦率的讲 - 本站目前共计6篇文章</h3>
-        </div>
-        <p><img src="/images/category-bg.jpg" alt="category-bg"></p>
-        <div class="post-content markdown-body" itemprop="articleBody">
-            <div class="archives">
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2019年02月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>14日14:59:33
-                            <a href="/资源/20190214145933.html">创建博客与遇到的问题</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2018年08月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>07日17:50:56
-                            <a href="/resource/20180807175056.html">Markdown文件基本编写语法</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>07日16:11:54
-                            <a href="/resource/20180807161154.html">Git初次配置用户名和邮箱</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>07日16:08:18
-                            <a href="/resource/20180807160818.html">Git使用ssh密钥</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="archives-item">
-                    <h2>2018年07月</h2>
-                    <ul class="archives_list">
-                        
-                        <li>24日13:49:35
-                            <a href="/resource/20180724134935.html">Git用法</a>
-                        </li>
-                        
-                
-                
-                
-                        <li>23日12:25:03
-                            <a href="/资源/20180807175056.html">Hello World</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="" target="_blank">
+                    <img width="48" src="/images/touxiang.jpeg" alt="avatar">
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="" target="_blank">Emily</a>
+                    <span title="最后编辑于2018-08-07">2018-08-07</span>
+                </p>
+                <p>一个测试</p>
+            </div>
+            <h2 class="post-title">Markdown文件基本编写语法</h2>
+            <div class="post-meta">
+                本文总共673个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
             </div>
         </div>
-    </article>
-</div>
+        <div class="post-content markdown-body">
+            <p>写blog需要使用Markdown，记录一些常用写法。</p>
+<h3 id="标题，最多6级："><a href="#标题，最多6级：" class="headerlink" title="标题，最多6级："></a>标题，最多6级：</h3><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>####### 七级标题</p>
+<h3 id="列表："><a href="#列表：" class="headerlink" title="列表："></a>列表：</h3><p>无序号列表：</p>
+<ul>
+<li>111</li>
+<li>222</li>
+</ul>
+<ul>
+<li>111</li>
+<li>222</li>
+</ul>
+<ul>
+<li>111</li>
+<li>222</li>
+</ul>
+<p>用*，+，-创建无序列表</p>
+<p>有序号列表：</p>
+<ol>
+<li>列表1</li>
+<li>列表2</li>
+<li>列表3</li>
+</ol>
+<p>数字后加英文.创建有序列表。</p>
+<ol start="6">
+<li>序列1</li>
+<li>序列2</li>
+<li>序列3</li>
+</ol>
+<p>序列根据第一行数字排序，与之后的列表数字无关。</p>
+<h3 id="区块："><a href="#区块：" class="headerlink" title="区块："></a>区块：</h3><blockquote>
+<p>要特别注意</p>
+</blockquote>
+<blockquote>
+<p>一级块</p>
+<blockquote>
+<p>二级块</p>
+<blockquote>
+<p>三级块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>用法就是在语句前面加一个 &gt; ，注意是英文的那个右尖括号，注意空格。</p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>分割线可以由* - _（星号，减号，底线）这3个符号表示，注意至少要3个，且不需要连续，有空格也可以.</p>
+<h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p><a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p>链接的文字放在[]中，链接地址放在随后的（）中。</p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="http://image.baidu.com/search/detail?z=0&amp;word=%E6%91%84%E5%BD%B1%E5%B8%88%E8%8A%A6%E7%82%B3%E8%87%A3&amp;hs=0&amp;pn=1&amp;spn=0&amp;di=0&amp;pi=55562477953&amp;tn=baiduimagedetail&amp;is=0%2C0&amp;ie=utf-8&amp;oe=utf-8&amp;cs=4036622033%2C3062905213&amp;os=&amp;simid=&amp;adpicid=0&amp;lpn=0&amp;fm=&amp;sme=&amp;cg=&amp;bdtype=-1&amp;oriquery=&amp;objurl=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fd52a2834349b033bda94010519ce36d3d439bdd5.jpg&amp;fromurl=&amp;gsm=0&amp;catename=pcindexhot&amp;islist=&amp;querylist=" alt="图片"></p>
+<p>用法跟链接的基本一样，唯一的不同就是，图片前面要写一个！（这是必须的）。</p>
+<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><p>单行</p>
+<p><code>git status</code></p>
+<p>多行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+<p>单行代码两个反引号<code></code>括起来，多行代码3个反引号括起来，多行可写注释。</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">name</th>
+<th style="text-align:left">age</th>
+<th style="text-align:right">sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Emily</td>
+<td style="text-align:left">20</td>
+<td style="text-align:right">F</td>
+</tr>
+<tr>
+<td style="text-align:center">lucy</td>
+<td style="text-align:left">18</td>
+<td style="text-align:right">M</td>
+</tr>
+</tbody>
+</table>
+<p>冒号代表对齐方式。</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>age</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emily</td>
+<td>20</td>
+<td>F</td>
+</tr>
+<tr>
+<td>lucy</td>
+<td>18</td>
+<td>M</td>
+</tr>
+</tbody>
+</table>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p><em>字体倾斜</em><br><em>字体倾斜</em></p>
+<p><strong>字体加粗</strong><br><strong>字体加粗</strong></p>
+<p>一个*或_包起文字，代表字体倾斜。<br>两个**或__包起文字，代表字体加粗。</p>
+<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>\<br>*<br>#<br>_</p>
+<p>需要转义前加斜杠\</p>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p><del>删除线</del></p>
+<p>使用两个~包起文字</p>
 
+        </div>
+        <div class="post-tool">
+            <!--<a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>-->
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/resource/">资料</a>
+            
+        </div>
+        
+    </article>
+    
+    <p>本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">
